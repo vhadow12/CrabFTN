@@ -1403,10 +1403,9 @@
     <!-- Modals -->
     <div id="modals-container">
         <!-- Cart overlay and product modal loaded from components/modals.html -->
-    </div>
-
-    <!-- Quote Email Modal -->
-    <div id="quote-email-modal" class="modal-hidden modal" onclick="if(event.target === this) closeQuoteEmailModal()">
+        
+        <!-- Quote Email Modal (HIDDEN BY DEFAULT) -->
+        <div id="quote-email-modal" class="modal-hidden modal" onclick="if(event.target === this) closeQuoteEmailModal()">
             <div class="modal-content" onclick="event.stopPropagation()">
                 <button onclick="closeQuoteEmailModal()" class="modal-close-btn" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: #666; cursor: pointer; font-size: 24px;">
                     <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1454,6 +1453,7 @@
                 </form>
             </div>
         </div>
+    </div>
 
     <!-- Firebase SDK -->
     <script type="module">
