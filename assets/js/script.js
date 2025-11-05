@@ -1012,14 +1012,11 @@ function requestQuote() {
 
 // Show quote email modal
 function showQuoteEmailModal() {
-    console.log('📧 Showing quote email modal...');
-    let modal = document.getElementById('quote-email-modal');
+    console.log('📧 Redirecting to quote request page...');
     
-    if (!modal) {
-        console.error('❌ Quote modal not found in DOM!');
-        alert('Error: Quote modal not loaded. Please refresh the page.');
-        return;
-    }
+    // NEW APPROACH: Redirect to dedicated quote page instead of modal
+    window.location.href = 'request-quote.html';
+    return;
     
     const itemsList = document.getElementById('quote-items-list');
     const totalDisplay = document.getElementById('quote-total-display');

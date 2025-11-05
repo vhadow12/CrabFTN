@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Request Quote - CRBFTN Premium Streetwear</title>
+    <meta name="description" content="Request a custom quote for your CRBFTN order. Get personalized pricing and exclusive deals.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo.png">
+    <link rel="shortcut icon" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/crbftn-premium.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <div id="navigation-container"></div>
+
+    <!-- Hero Section -->
+    <section class="relative text-white py-20" style="background: linear-gradient(135deg, #DC2626 0%, #2563EB 100%);">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fadeInUp">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full mb-6">
+                    <svg width="40" height="40" fill="none" stroke="white" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <h1 class="heading-brand text-5xl md:text-6xl mb-4">Request Your Quote</h1>
+                <p class="text-xl opacity-90 max-w-2xl mx-auto">
+                    Get a personalized quote for your CRBFTN order. We'll respond within 24 hours with your custom pricing.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Order Summary Card -->
+                <div class="order-2 lg:order-1">
+                    <div class="premium-card p-8 sticky top-24" data-aos="fade-right">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-r from-red-600 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                                <svg width="24" height="24" fill="none" stroke="white" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-2xl font-bold">Your Order</h2>
+                        </div>
+
+                        <!-- Cart Items Display -->
+                        <div id="quote-items-list" class="space-y-4 mb-6">
+                            <div class="text-center py-8 text-gray-400">
+                                <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                                </svg>
+                                <p>Your cart is empty</p>
+                            </div>
+                        </div>
+
+                        <!-- Price Breakdown -->
+                        <div class="border-t border-gray-200 pt-6">
+                            <div class="space-y-3 mb-4">
+                                <div class="flex justify-between text-gray-600">
+                                    <span>Subtotal</span>
+                                    <span id="subtotal-display">R0.00</span>
+                                </div>
+                                <div class="flex justify-between text-green-600 font-semibold">
+                                    <span>🔥 Launch Sale (35% OFF)</span>
+                                    <span id="discount-display">-R0.00</span>
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-200 pt-4">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xl font-bold">Total</span>
+                                    <span id="quote-total-display" class="text-3xl font-bold text-transparent bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text">R0.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trust Badges -->
+                        <div class="mt-8 pt-6 border-t border-gray-200">
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div class="flex items-center text-gray-600">
+                                    <svg class="w-5 h-5 mr-2 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Free Shipping
+                                </div>
+                                <div class="flex items-center text-gray-600">
+                                    <svg class="w-5 h-5 mr-2 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Secure Payment
+                                </div>
+                                <div class="flex items-center text-gray-600">
+                                    <svg class="w-5 h-5 mr-2 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    24h Response
+                                </div>
+                                <div class="flex items-center text-gray-600">
+                                    <svg class="w-5 h-5 mr-2 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Easy Returns
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote Form -->
+                <div class="order-1 lg:order-2" data-aos="fade-left">
+                    <div class="premium-card p-8">
+                        <h2 class="text-2xl font-bold mb-6">Your Information</h2>
+                        
+                        <form id="quote-request-form" onsubmit="submitQuoteRequest(event)" class="space-y-6">
+                            <!-- Name Field -->
+                            <div>
+                                <label for="customer-name" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Full Name <span class="text-red-600">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="customer-name" 
+                                    name="name" 
+                                    required 
+                                    placeholder="John Doe"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all"
+                                >
+                            </div>
+
+                            <!-- Email Field -->
+                            <div>
+                                <label for="customer-email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Email Address <span class="text-red-600">*</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="customer-email" 
+                                    name="email" 
+                                    required 
+                                    placeholder="your@email.com"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all"
+                                >
+                                <p class="mt-2 text-xs text-gray-500">We'll send your quote to this email</p>
+                            </div>
+
+                            <!-- Phone Field -->
+                            <div>
+                                <label for="customer-phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Phone Number <span class="text-red-600">*</span>
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="customer-phone" 
+                                    name="phone" 
+                                    required 
+                                    placeholder="+27 XX XXX XXXX"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all"
+                                >
+                            </div>
+
+                            <!-- Message Field -->
+                            <div>
+                                <label for="customer-message" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Additional Message (Optional)
+                                </label>
+                                <textarea 
+                                    id="customer-message" 
+                                    name="message" 
+                                    rows="4" 
+                                    placeholder="Any special requests, sizing questions, or custom requirements..."
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all resize-none"
+                                ></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="pt-4">
+                                <button 
+                                    type="submit" 
+                                    id="submit-quote-btn"
+                                    class="w-full btn-primary py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                                >
+                                    Send Quote Request
+                                    <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </button>
+                                <p class="mt-3 text-center text-sm text-gray-500">
+                                    By submitting, you agree to our Terms & Privacy Policy
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="mt-6 p-6 bg-gradient-to-r from-red-50 to-blue-50 rounded-lg">
+                        <h3 class="font-semibold text-gray-900 mb-2">💬 What Happens Next?</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-red-600 mr-2">1.</span>
+                                <span>We review your order and prepare a detailed quote</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-600 mr-2">2.</span>
+                                <span>You'll receive an email within 24 hours with pricing and availability</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-600 mr-2">3.</span>
+                                <span>Reply to confirm and proceed with secure payment</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Modals Container -->
+    <div id="modals-container">
+        <!-- Cart overlay and product modal loaded from components/modals.html -->
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Component Loader Script -->
+    <script>
+        // Function to load HTML components
+        async function loadComponent(elementId, componentPath) {
+            try {
+                const response = await fetch(componentPath);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const html = await response.text();
+                document.getElementById(elementId).innerHTML = html;
+            } catch (error) {
+                console.error(`Error loading ${componentPath}:`, error);
+            }
+        }
+
+        // Load components
+        document.addEventListener('DOMContentLoaded', () => {
+            loadComponent('navigation-container', 'components/navigation.html');
+            loadComponent('footer-container', 'components/footer.html');
+            
+            // Load modals component
+            loadComponent('modals-container', 'components/modals.html');
+            
+            // Initialize AOS animations
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out',
+                once: true
+            });
+
+            // Load cart items and populate the quote page
+            populateQuoteItems();
+        });
+
+        // Populate quote items from cart
+        function populateQuoteItems() {
+            const cart = JSON.parse(localStorage.getItem('crbftn-cart') || '[]');
+            const itemsList = document.getElementById('quote-items-list');
+            const subtotalDisplay = document.getElementById('subtotal-display');
+            const discountDisplay = document.getElementById('discount-display');
+            const totalDisplay = document.getElementById('quote-total-display');
+
+            if (cart.length === 0) {
+                itemsList.innerHTML = `
+                    <div class="text-center py-8 text-gray-400">
+                        <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                        <p class="mb-4">Your cart is empty</p>
+                        <a href="products.html" class="btn-primary inline-block">Shop Now</a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Calculate totals
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const discount = subtotal * 0.35; // 35% off
+            const total = subtotal - discount;
+
+            // Display items
+            itemsList.innerHTML = cart.map(item => {
+                const itemSubtotal = item.price * item.quantity;
+                const itemDiscount = itemSubtotal * 0.35;
+                const itemTotal = itemSubtotal - itemDiscount;
+                
+                return `
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                        <div class="flex-1">
+                            <h4 class="font-semibold text-gray-900">${item.name}</h4>
+                            <p class="text-sm text-gray-600">Size: ${item.size} × ${item.quantity}</p>
+                            <div class="mt-1">
+                                <span class="text-xs text-gray-400 line-through">R${itemSubtotal.toFixed(2)}</span>
+                                <span class="text-sm font-semibold text-red-600 ml-2">R${itemTotal.toFixed(2)}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Update displays
+            subtotalDisplay.textContent = `R${subtotal.toFixed(2)}`;
+            discountDisplay.textContent = `-R${discount.toFixed(2)}`;
+            totalDisplay.textContent = `R${total.toFixed(2)}`;
+        }
+
+        // Submit quote request
+        function submitQuoteRequest(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const submitBtn = document.getElementById('submit-quote-btn');
+            const cart = JSON.parse(localStorage.getItem('crbftn-cart') || '[]');
+
+            if (cart.length === 0) {
+                alert('Your cart is empty! Please add items before requesting a quote.');
+                return;
+            }
+
+            // Disable button
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+                <svg class="animate-spin inline-block w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Sending...
+            `;
+
+            // Prepare form data
+            const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                phone: form.phone.value,
+                message: form.message.value,
+                cart: cart,
+                total: document.getElementById('quote-total-display').textContent
+            };
+
+            // Submit to your Netlify function or email service
+            console.log('Quote request submitted:', formData);
+
+            // Simulate submission (replace with actual submission logic)
+            setTimeout(() => {
+                alert('✅ Quote request sent successfully! Check your email within 24 hours.');
+                form.reset();
+                localStorage.removeItem('crbftn-cart');
+                window.location.href = 'index.html';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
