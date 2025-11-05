@@ -1017,6 +1017,18 @@ body.has-sticky-nav {
 }
 
 /* ========== MODAL SYSTEM ========== */
+/* ABSOLUTE NUCLEAR OPTION: Hide modal by default, only show when explicitly opened */
+#quote-email-modal {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: fixed !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    pointer-events: none !important;
+    z-index: -9999 !important;
+}
+
 #quote-email-modal.modal-hidden,
 #quote-email-modal.modal-hidden *,
 #quote-email-modal.modal-hidden *::before,
@@ -1027,6 +1039,24 @@ body.has-sticky-nav {
     position: absolute !important;
     left: -99999px !important;
     pointer-events: none !important;
+}
+
+/* Only show modal when it has the 'active' class (set by JS) */
+#quote-email-modal.modal-active,
+#quote-email-modal.active {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: 10000 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    pointer-events: auto !important;
 }
 
 .modal:not(.modal-hidden) {

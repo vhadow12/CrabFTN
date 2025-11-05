@@ -1055,15 +1055,29 @@ function showQuoteEmailModal() {
         `;
     }
     
-    // SIMPLE SOLUTION - Just remove modal-hidden class and ensure display is flex with centering
+    // NUCLEAR OPTION - Force override ALL hiding with explicit active class and inline styles
     modal.classList.remove('modal-hidden');
-    modal.style.display = 'flex';
-    modal.style.justifyContent = 'center';
-    modal.style.alignItems = 'center';
-    modal.style.zIndex = '1000';
-    modal.style.transform = 'translateY(0)';
+    modal.classList.add('modal-active', 'active');
     
-    console.log('🚀 Modal shown by removing hidden class and setting display flex');
+    // Force inline styles to override EVERYTHING
+    modal.style.cssText = `
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        z-index: 10000 !important;
+        justify-content: center !important;
+        align-items: center !important;
+        pointer-events: auto !important;
+        transform: none !important;
+    `;
+    
+    console.log('🚀 Modal shown with NUCLEAR force - active class + inline styles');
     console.log('Modal element:', modal);
     console.log('Modal computed display:', window.getComputedStyle(modal).display);
     console.log('Modal classList:', modal.classList.toString());
@@ -1144,10 +1158,20 @@ function closeQuoteEmailModal() {
     console.log('🚪 Closing quote modal...');
     const modal = document.getElementById('quote-email-modal');
     if (modal) {
+        modal.classList.remove('modal-active', 'active');
         modal.classList.add('modal-hidden');
-        modal.style.display = 'none';
-        modal.style.zIndex = '-9999';
-        modal.style.transform = 'translateY(-200%)';
+        
+        // Force hide with inline styles
+        modal.style.cssText = `
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            position: fixed !important;
+            top: -9999px !important;
+            left: -9999px !important;
+            pointer-events: none !important;
+            z-index: -9999 !important;
+        `;
         
         // Reset form
         const form = document.getElementById('quote-email-form');
@@ -1158,7 +1182,7 @@ function closeQuoteEmailModal() {
         // Restore body scroll
         document.body.style.overflow = '';
         
-        console.log('✅ Quote modal closed');
+        console.log('✅ Quote modal closed and NUKED');
     }
 }
 
