@@ -1029,6 +1029,18 @@ body.has-sticky-nav {
     z-index: -9999 !important;
 }
 
+#quote-email-modal .modal-content {
+    position: relative;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 450px;
+    width: 90%;
+    margin: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    color: #111;
+}
+
 #quote-email-modal.modal-hidden,
 #quote-email-modal.modal-hidden *,
 #quote-email-modal.modal-hidden *::before,
