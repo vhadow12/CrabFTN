@@ -278,11 +278,11 @@
             });
 
             // Load cart items and populate the quote page
-            populateQuoteItems();
+            loadCartItems();
         });
 
-        // Populate quote items from cart
-        function populateQuoteItems() {
+        // Load and display cart items
+        function loadCartItems() {
             const cart = JSON.parse(localStorage.getItem('crbftn-cart') || '[]');
             const itemsList = document.getElementById('quote-items-list');
             const subtotalDisplay = document.getElementById('subtotal-display');
