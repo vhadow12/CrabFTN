@@ -283,7 +283,7 @@
 
         // Load and display cart items
         function loadCartItems() {
-            const cart = JSON.parse(localStorage.getItem('crbftn-cart') || '[]');
+            const cart = JSON.parse(localStorage.getItem('crbftn_cart') || '[]');
             const itemsList = document.getElementById('quote-items-list');
             const subtotalDisplay = document.getElementById('subtotal-display');
             const discountDisplay = document.getElementById('discount-display');
@@ -339,7 +339,7 @@
             
             const form = event.target;
             const submitBtn = document.getElementById('submit-quote-btn');
-            const cart = JSON.parse(localStorage.getItem('crbftn-cart') || '[]');
+            const cart = JSON.parse(localStorage.getItem('crbftn_cart') || '[]');
 
             if (cart.length === 0) {
                 alert('Your cart is empty! Please add items before requesting a quote.');
@@ -373,7 +373,7 @@
             setTimeout(() => {
                 alert('✅ Quote request sent successfully! Check your email within 24 hours.');
                 form.reset();
-                localStorage.removeItem('crbftn-cart');
+                localStorage.removeItem('crbftn_cart');
                 window.location.href = 'index.html';
             }, 2000);
         }
