@@ -32,170 +32,281 @@ let currentFilter = 'all';
 
 // Sample products data
 const products = [
-    // Hoodies
+    // Hoodies & Sweaters
     {
         id: 1,
-        name: "Premium Hoodie",
+        name: "Chocolate Season Hoodie",
         category: "hoodies",
-        price: 899,
-        image: "assets/images/products/premium-hoodie.webp",
-        description: "Comfortable premium hoodie perfect for any season. Made with high-quality cotton blend.",
+        price: 1000,
+        image: "assets/images/products/chocolate-season-hoodie.webp",
+        description: "Premium chocolate-colored hoodie perfect for the season. Made with high-quality cotton blend for ultimate comfort.",
         featured: true
     },
     {
-        id: 7,
-        name: "Designer Hoodie",
+        id: 2,
+        name: "Gang Purple Season 1 Hoodie",
         category: "hoodies",
-        price: 1199,
-        image: "assets/images/products/designer-hoodie.webp",
-        description: "Limited edition designer hoodie with unique patterns and premium finish."
+        price: 600,
+        image: "assets/images/products/gang-purple-season1-hoodie.webp",
+        description: "Limited edition Gang Purple hoodie from Season 1. Bold design with premium finish and comfortable fit."
     },
     {
-        id: 13,
-        name: "Oversized Hoodie",
+        id: 3,
+        name: "Male Yellowbone Hoodie",
         category: "hoodies",
-        price: 1099,
-        image: "assets/images/products/oversized-hoodie.webp",
-        description: "Trendy oversized hoodie with relaxed fit and modern styling."
+        price: 800,
+        image: "assets/images/products/male-yellowbone-hoodie.webp",
+        description: "Stylish yellowbone hoodie designed for modern men. Premium materials with contemporary styling."
     },
     {
-        id: 19,
-        name: "Zip-Up Hoodie",
+        id: 4,
+        name: "Pink 28kg Season Hoodie",
         category: "hoodies",
-        price: 949,
-        image: "assets/images/products/zip-up-hoodie.webp",
-        description: "Versatile zip-up hoodie perfect for layering and active wear."
+        price: 600,
+        image: "assets/images/products/pink-28kg-season-hoodie.webp",
+        description: "Eye-catching pink hoodie from the 28kg season collection. Unique design with superior comfort."
     },
     {
-        id: 25,
-        name: "Cropped Hoodie",
+        id: 5,
+        name: "Snowwhite Season 6 Hoodie",
         category: "hoodies",
-        price: 799,
-        image: "assets/images/products/cropped-hoodie.webp",
-        description: "Stylish cropped hoodie with contemporary cut and premium materials."
+        price: 900,
+        image: "assets/images/products/snowwhite-season6-hoodie.webp",
+        description: "Premium snowwhite hoodie from Season 6. Clean design with luxurious feel and perfect fit."
+    },
+    {
+        id: 6,
+        name: "Chocolate Season Sweater",
+        category: "hoodies",
+        price: 500,
+        image: "assets/images/products/chocolate-season-sweater.webp",
+        description: "Cozy chocolate season sweater perfect for layering. Soft fabric with stylish design elements."
     },
 
     // T-Shirts
     {
-        id: 31,
-        name: "Classic Tee",
+        id: 7,
+        name: "Grass Green Season 1 T-Shirt",
         category: "tshirts",
-        price: 499,
-        image: "assets/images/products/classic-tee.webp",
-        description: "Premium cotton t-shirt with CRBFTN branding. Essential wardrobe staple.",
-        featured: true
-    },
-    {
-        id: 32,
-        name: "Graphic Tee",
-        category: "tshirts",
-        price: 549,
-        image: "assets/images/products/graphic-tee.webp",
-        description: "Bold graphic t-shirt with unique CRBFTN artwork and premium print quality."
-    },
-    {
-        id: 33,
-        name: "Vintage Tee",
-        category: "tshirts",
-        price: 599,
-        image: "assets/images/products/vintage-tee.webp",
-        description: "Vintage-inspired t-shirt with distressed details and soft cotton blend."
-    },
-    {
-        id: 34,
-        name: "Long Sleeve Tee",
-        category: "tshirts",
-        price: 649,
-        image: "assets/images/products/long-sleeve-tee.webp",
-        description: "Comfortable long sleeve t-shirt perfect for layering and casual wear."
-    },
-    {
-        id: 35,
-        name: "Polo Shirt",
-        category: "tshirts",
-        price: 749,
-        image: "assets/images/products/polo-shirt.webp",
-        description: "Classic polo shirt with modern fit and premium cotton construction."
-    },
-    
-    // Pants
-    {
-        id: 2,
-        name: "Classic Jeans",
-        category: "pants",
-        price: 1299,
-        image: "assets/images/products/classic-crbftn-jeans.webp",
-        description: "Timeless denim jeans with perfect fit and durability. A wardrobe essential.",
+        price: 350,
+        image: "assets/images/products/grass-green-season1-tshirt.webp",
+        description: "Fresh grass green t-shirt from Season 1. Premium cotton with vibrant color that lasts.",
         featured: true
     },
     {
         id: 8,
-        name: "Cargo Pants",
-        category: "pants",
-        price: 999,
-        image: "assets/images/products/cargo-pants.webp",
-        description: "Functional cargo pants with multiple pockets and durable fabric."
+        name: "Grey Chocolates Season 6 T-Shirt",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/grey-chocolates-season6-tshirt.webp",
+        description: "Sophisticated grey chocolate t-shirt from Season 6. Perfect blend of style and comfort."
     },
     {
-        id: 14,
-        name: "Slim Fit Chinos",
-        category: "pants",
-        price: 849,
-        image: "assets/images/products/slim-chinos.webp",
-        description: "Elegant slim fit chinos perfect for casual and semi-formal occasions."
+        id: 9,
+        name: "28kg T-Shirt",
+        category: "tshirts",
+        price: 400,
+        image: "assets/images/products/28kg-tshirt.webp",
+        description: "Classic 28kg t-shirt with bold branding. Essential piece for any streetwear collection."
     },
     {
-        id: 20,
-        name: "Track Pants",
-        category: "pants",
-        price: 899,
-        image: "assets/images/products/track-pants.webp",
-        description: "Deep indigo dark wash jeans with CRBFTN signature stitching and premium denim."
+        id: 10,
+        name: "Grass Season 6 T-Shirt",
+        category: "tshirts",
+        price: 350,
+        image: "assets/images/products/grass-season6-tshirt.webp",
+        description: "Nature-inspired grass t-shirt from Season 6. Eco-friendly design with premium materials."
+    },
+    {
+        id: 11,
+        name: "Pink Crabs Multiply T-Shirt",
+        category: "tshirts",
+        price: 600,
+        image: "assets/images/products/pink-crabs-multiply-tshirt.webp",
+        description: "Unique pink Crabs Multiply design. Creative artwork meets premium t-shirt quality."
     },
     {
         id: 12,
-        name: "Distressed CRBFTN Jeans",
-        category: "pants",
-        price: 1499,
-        image: "assets/images/products/distressed-crbftn-jeans.webp",
-        description: "Carefully distressed jeans with authentic wear patterns and CRBFTN patches."
+        name: "Long Sleeve Chocolate Season",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/long-sleeve-chocolate-season.webp",
+        description: "Versatile long sleeve chocolate season tee. Perfect for layering and year-round wear."
+    },
+    {
+        id: 13,
+        name: "Moody Season 6 T-Shirt",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/moody-season6-tshirt.webp",
+        description: "Expressive moody t-shirt from Season 6. Bold design that makes a statement."
+    },
+    {
+        id: 14,
+        name: "Crabs Multiply T-Shirt",
+        category: "tshirts",
+        price: 600,
+        image: "assets/images/products/crabs-multiply-tshirt.webp",
+        description: "Signature Crabs Multiply design on premium cotton. Iconic CRBFTN artwork."
+    },
+    {
+        id: 15,
+        name: "Pink 28kg T-Shirt",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/pink-28kg-tshirt.webp",
+        description: "Vibrant pink 28kg t-shirt with bold graphics. Stand out piece for confident wearers."
+    },
+    {
+        id: 16,
+        name: "1.1 Multiply T-Shirt",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/11-multiply-tshirt.webp",
+        description: "Mathematical inspired 1.1 Multiply design. Creative concept meets streetwear style."
+    },
+
+    // Women's Collection
+    {
+        id: 17,
+        name: "Female Crop Jeans Yellow",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-crop-jeans-yellow.webp",
+        description: "Trendy yellow crop jeans perfect for summer. Modern fit with premium denim quality.",
+        featured: true
     },
     {
         id: 18,
-        name: "Slim Black CRBFTN Jeans",
-        category: "pants",
-        price: 1449,
-        image: "assets/images/products/slim-black-crbftn-jeans.webp",
-        description: "Sleek black jeans with slim fit and subtle CRBFTN logo embroidery."
+        name: "Female Ringo Season 6",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-ringo-season6.webp",
+        description: "Stylish Ringo design from Season 6 women's collection. Contemporary fit and feel."
+    },
+    {
+        id: 19,
+        name: "Female Snowing Top",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-snowing-top.webp",
+        description: "Elegant snowing top for women. Delicate design with comfortable fit for all occasions."
+    },
+    {
+        id: 20,
+        name: "Female Two Piece",
+        category: "womens",
+        price: 800,
+        image: "assets/images/products/female-two-piece.webp",
+        description: "Coordinated two-piece set for women. Matching top and bottom in premium fabric."
+    },
+    {
+        id: 21,
+        name: "Female Black Kupa Snowhite",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-black-kupa-snowhite.webp",
+        description: "Elegant black Kupa design with snowhite accents. Sophisticated women's wear."
+    },
+    {
+        id: 22,
+        name: "Female 28kg Crop T-Shirt",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-28kg-crop-tshirt.webp",
+        description: "Trendy crop t-shirt with 28kg branding. Perfect fit for modern women's style."
+    },
+    {
+        id: 23,
+        name: "Female Crop Shorts",
+        category: "womens",
+        price: 450,
+        image: "assets/images/products/female-crop-shorts.webp",
+        description: "Comfortable crop shorts for women. Ideal for casual wear and active lifestyle."
     },
     {
         id: 24,
-        name: "Vintage Blue CRBFTN Jeans",
-        category: "pants",
-        price: 1349,
-        image: "assets/images/products/vintage-blue-crbftn-jeans.webp",
-        description: "Classic vintage blue wash with faded effects and CRBFTN heritage styling."
+        name: "Female Crop Snowhite",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-crop-snowhite.webp",
+        description: "Clean snowhite crop design for women. Minimalist style with maximum impact."
+    },
+    {
+        id: 25,
+        name: "Female Kupa Snowhite Crop",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-kupa-snowhite-crop.webp",
+        description: "Stylish Kupa snowhite crop top. Perfect blend of comfort and contemporary design."
+    },
+    {
+        id: 26,
+        name: "Female Lime Snow Season 6",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-lime-snow-season6.webp",
+        description: "Fresh lime snow design from Season 6 women's collection. Vibrant and stylish."
+    },
+    {
+        id: 27,
+        name: "Female Ringo Vest",
+        category: "womens",
+        price: 250,
+        image: "assets/images/products/female-ringo-vest.webp",
+        description: "Lightweight Ringo vest for women. Perfect for layering and warm weather styling."
+    },
+    {
+        id: 28,
+        name: "Female Yellowbone Vest",
+        category: "womens",
+        price: 300,
+        image: "assets/images/products/female-yellowbone-vest.webp",
+        description: "Stylish yellowbone vest with modern cut. Essential piece for women's wardrobe."
+    },
+
+    // Bottoms Collection
+    {
+        id: 29,
+        name: "Ringo Female Shorts",
+        category: "bottoms",
+        price: 450,
+        image: "assets/images/products/ringo-female-shorts.webp",
+        description: "Comfortable Ringo shorts for women. Perfect for casual wear and active lifestyle."
     },
     {
         id: 30,
-        name: "Raw Denim CRBFTN Jeans",
-        category: "pants",
-        price: 1599,
-        image: "assets/images/products/raw-denim-crbftn-jeans.webp",
-        description: "Premium raw denim jeans that age beautifully with CRBFTN craftsmanship."
+        name: "Ringo Jeans Season 6",
+        category: "bottoms",
+        price: 1000,
+        image: "assets/images/products/ringo-jeans-season6.webp",
+        description: "Premium Ringo jeans from Season 6. High-quality denim with perfect fit and durability."
     },
-    
-    // NEW CREATIVE CRBFTN CLOTHING COLLECTION
-    
-    // Creative Hoodies
     {
-        id: 36,
-        name: "Fresh New Sea Hoodie",
-        category: "hoodies",
-        price: 1299,
-        image: "assets/images/products/fresh-new-sea-hoodie.webp",
-        description: "Dive into style with our ocean-inspired hoodie featuring wave graphics and marine blue accents.",
-        featured: true
+        id: 31,
+        name: "Ringo Skirts Season 6",
+        category: "bottoms",
+        price: 700,
+        image: "assets/images/products/ringo-skirts-season6.webp",
+        description: "Elegant Ringo skirts from Season 6. Sophisticated design with comfortable fit."
+    },
+
+    // Accessories
+    {
+        id: 32,
+        name: "Rainbow Bucket Hat",
+        category: "accessories",
+        price: 250,
+        image: "assets/images/products/rainbow-bucket-hat.webp",
+        description: "Colorful rainbow bucket hat. Fun accessory that adds personality to any outfit."
+    },
+    {
+        id: 33,
+        name: "Cap Season 6",
+        category: "accessories",
+        price: 200,
+        image: "assets/images/products/cap-season6.webp",
+        description: "Classic cap from Season 6 collection. Essential headwear with clean CRBFTN branding."
     },
     {
         id: 37,
@@ -406,10 +517,6 @@ const products = [
         id: 55,
         name: "CRBFTN Street Belt",
         category: "accessories",
-        price: 399,
-        image: "assets/images/products/crbftn-street-belt.webp",
-        description: "Adjustable street belt with custom CRBFTN buckle and durable construction."
-    }
 ];
 
 // Gallery items
@@ -679,12 +786,13 @@ function renderCategorySections() {
     const container = document.getElementById('category-sections');
     if (!container) return;
     
-    const categories = ['hoodies', 'pants', 'shoes', 'hats'];
+    const categories = ['hoodies', 'tshirts', 'womens', 'bottoms', 'accessories'];
     const categoryNames = {
-        'hoodies': 'Hoodies & Sweatshirts',
-        'pants': 'Pants & Jeans',
-        'shoes': 'Shoes & Sneakers',
-        'hats': 'Hats & Caps'
+        'hoodies': 'Hoodies & Sweaters',
+        'tshirts': 'T-Shirts & Long Sleeves',
+        'womens': 'Women\'s Collection',
+        'bottoms': 'Jeans & Shorts',
+        'accessories': 'Hats & Accessories'
     };
     
     container.innerHTML = categories.map(category => {
