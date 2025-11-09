@@ -1595,7 +1595,7 @@ async function handleQuoteEmailJSFallback(formData, submitBtn, originalText) {
         console.error('EmailJS fallback also failed:', emailError);
         
         // Final fallback - show error with direct contact info
-        showToast('Unable to send quote automatically. Please email us directly at crabfontain@gmail.com or call +27 68 000 3578 with your cart details.');
+        showToast('Unable to send quote automatically. Please email us directly at acount@crbftncrabfontain.co.za or call 076 995 4397 with your cart details.');
     } finally {
         // Reset button
         submitBtn.innerHTML = originalText;
