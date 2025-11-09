@@ -409,6 +409,285 @@ const products = [
         price: 399,
         image: "assets/images/products/crbftn-street-belt.webp",
         description: "Adjustable street belt with custom CRBFTN buckle and durable construction."
+    },
+
+    // NEW CRBFTN PRODUCTS - 33 Items Added
+    
+    // New Hoodies & Sweaters
+    {
+        id: 60,
+        name: "Chocolate Season Hoodie",
+        category: "hoodies",
+        price: 1000,
+        image: "assets/images/products/chocolate-season-hoodie.webp",
+        description: "Premium chocolate-colored hoodie perfect for the season. Made with high-quality cotton blend for ultimate comfort.",
+        featured: true
+    },
+    {
+        id: 61,
+        name: "Gang Purple Season 1 Hoodie",
+        category: "hoodies",
+        price: 600,
+        image: "assets/images/products/gang-purple-season1-hoodie.webp",
+        description: "Limited edition Gang Purple hoodie from Season 1. Bold design with premium finish and comfortable fit."
+    },
+    {
+        id: 62,
+        name: "Male Yellowbone Hoodie",
+        category: "hoodies",
+        price: 800,
+        image: "assets/images/products/male-yellowbone-hoodie.webp",
+        description: "Stylish yellowbone hoodie designed for modern men. Premium materials with contemporary styling."
+    },
+    {
+        id: 63,
+        name: "Pink 28kg Season Hoodie",
+        category: "hoodies",
+        price: 600,
+        image: "assets/images/products/pink-28kg-season-hoodie.webp",
+        description: "Eye-catching pink hoodie from the 28kg season collection. Unique design with superior comfort."
+    },
+    {
+        id: 64,
+        name: "Snowwhite Season 6 Hoodie",
+        category: "hoodies",
+        price: 900,
+        image: "assets/images/products/snowwhite-season6-hoodie.webp",
+        description: "Premium snowwhite hoodie from Season 6. Clean design with luxurious feel and perfect fit."
+    },
+    {
+        id: 65,
+        name: "Chocolate Season Sweater",
+        category: "hoodies",
+        price: 500,
+        image: "assets/images/products/chocolate-season-sweater.webp",
+        description: "Cozy chocolate season sweater perfect for layering. Soft fabric with stylish design elements."
+    },
+
+    // New T-Shirts
+    {
+        id: 66,
+        name: "Grass Green Season 1 T-Shirt",
+        category: "tshirts",
+        price: 350,
+        image: "assets/images/products/grass-green-season1-tshirt.webp",
+        description: "Fresh grass green t-shirt from Season 1. Premium cotton with vibrant color that lasts.",
+        featured: true
+    },
+    {
+        id: 67,
+        name: "Grey Chocolates Season 6 T-Shirt",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/grey-chocolates-season6-tshirt.webp",
+        description: "Sophisticated grey chocolate t-shirt from Season 6. Perfect blend of style and comfort."
+    },
+    {
+        id: 68,
+        name: "28kg T-Shirt",
+        category: "tshirts",
+        price: 400,
+        image: "assets/images/products/28kg-tshirt.webp",
+        description: "Classic 28kg t-shirt with bold branding. Essential piece for any streetwear collection."
+    },
+    {
+        id: 69,
+        name: "Grass Season 6 T-Shirt",
+        category: "tshirts",
+        price: 350,
+        image: "assets/images/products/grass-season6-tshirt.webp",
+        description: "Nature-inspired grass t-shirt from Season 6. Eco-friendly design with premium materials."
+    },
+    {
+        id: 70,
+        name: "Pink Crabs Multiply T-Shirt",
+        category: "tshirts",
+        price: 600,
+        image: "assets/images/products/pink-crabs-multiply-tshirt.webp",
+        description: "Unique pink Crabs Multiply design. Creative artwork meets premium t-shirt quality."
+    },
+    {
+        id: 71,
+        name: "Long Sleeve Chocolate Season",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/long-sleeve-chocolate-season.webp",
+        description: "Versatile long sleeve chocolate season tee. Perfect for layering and year-round wear."
+    },
+    {
+        id: 72,
+        name: "Moody Season 6 T-Shirt",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/moody-season6-tshirt.webp",
+        description: "Expressive moody t-shirt from Season 6. Bold design that makes a statement."
+    },
+    {
+        id: 73,
+        name: "Crabs Multiply T-Shirt",
+        category: "tshirts",
+        price: 600,
+        image: "assets/images/products/crabs-multiply-tshirt.webp",
+        description: "Signature Crabs Multiply design on premium cotton. Iconic CRBFTN artwork."
+    },
+    {
+        id: 74,
+        name: "Pink 28kg T-Shirt",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/pink-28kg-tshirt.webp",
+        description: "Vibrant pink 28kg t-shirt with bold graphics. Stand out piece for confident wearers."
+    },
+    {
+        id: 75,
+        name: "1.1 Multiply T-Shirt",
+        category: "tshirts",
+        price: 500,
+        image: "assets/images/products/11-multiply-tshirt.webp",
+        description: "Mathematical inspired 1.1 Multiply design. Creative concept meets streetwear style."
+    },
+
+    // Women's Collection
+    {
+        id: 76,
+        name: "Female Crop Jeans Yellow",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-crop-jeans-yellow.webp",
+        description: "Trendy yellow crop jeans perfect for summer. Modern fit with premium denim quality.",
+        featured: true
+    },
+    {
+        id: 77,
+        name: "Female Ringo Season 6",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-ringo-season6.webp",
+        description: "Stylish Ringo design from Season 6 women's collection. Contemporary fit and feel."
+    },
+    {
+        id: 78,
+        name: "Female Snowing Top",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-snowing-top.webp",
+        description: "Elegant snowing top for women. Delicate design with comfortable fit for all occasions."
+    },
+    {
+        id: 79,
+        name: "Female Two Piece",
+        category: "womens",
+        price: 800,
+        image: "assets/images/products/female-two-piece.webp",
+        description: "Coordinated two-piece set for women. Matching top and bottom in premium fabric."
+    },
+    {
+        id: 80,
+        name: "Female Black Kupa Snowhite",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-black-kupa-snowhite.webp",
+        description: "Elegant black Kupa design with snowhite accents. Sophisticated women's wear."
+    },
+    {
+        id: 81,
+        name: "Female 28kg Crop T-Shirt",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-28kg-crop-tshirt.webp",
+        description: "Trendy crop t-shirt with 28kg branding. Perfect fit for modern women's style."
+    },
+    {
+        id: 82,
+        name: "Female Crop Shorts",
+        category: "womens",
+        price: 450,
+        image: "assets/images/products/female-crop-shorts.webp",
+        description: "Comfortable crop shorts for women. Ideal for casual wear and active lifestyle."
+    },
+    {
+        id: 83,
+        name: "Female Crop Snowhite",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-crop-snowhite.webp",
+        description: "Clean snowhite crop design for women. Minimalist style with maximum impact."
+    },
+    {
+        id: 84,
+        name: "Female Kupa Snowhite Crop",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-kupa-snowhite-crop.webp",
+        description: "Stylish Kupa snowhite crop top. Perfect blend of comfort and contemporary design."
+    },
+    {
+        id: 85,
+        name: "Female Lime Snow Season 6",
+        category: "womens",
+        price: 400,
+        image: "assets/images/products/female-lime-snow-season6.webp",
+        description: "Fresh lime snow design from Season 6 women's collection. Vibrant and stylish."
+    },
+    {
+        id: 86,
+        name: "Female Ringo Vest",
+        category: "womens",
+        price: 250,
+        image: "assets/images/products/female-ringo-vest.webp",
+        description: "Lightweight Ringo vest for women. Perfect for layering and warm weather styling."
+    },
+    {
+        id: 87,
+        name: "Female Yellowbone Vest",
+        category: "womens",
+        price: 300,
+        image: "assets/images/products/female-yellowbone-vest.webp",
+        description: "Stylish yellowbone vest with modern cut. Essential piece for women's wardrobe."
+    },
+
+    // New Bottoms Collection
+    {
+        id: 88,
+        name: "Ringo Female Shorts",
+        category: "bottoms",
+        price: 450,
+        image: "assets/images/products/ringo-female-shorts.webp",
+        description: "Comfortable Ringo shorts for women. Perfect for casual wear and active lifestyle."
+    },
+    {
+        id: 89,
+        name: "Ringo Jeans Season 6",
+        category: "bottoms",
+        price: 1000,
+        image: "assets/images/products/ringo-jeans-season6.webp",
+        description: "Premium Ringo jeans from Season 6. High-quality denim with perfect fit and durability."
+    },
+    {
+        id: 90,
+        name: "Ringo Skirts Season 6",
+        category: "bottoms",
+        price: 700,
+        image: "assets/images/products/ringo-skirts-season6.webp",
+        description: "Elegant Ringo skirts from Season 6. Sophisticated design with comfortable fit."
+    },
+
+    // New Accessories
+    {
+        id: 91,
+        name: "Rainbow Bucket Hat",
+        category: "accessories",
+        price: 250,
+        image: "assets/images/products/rainbow-bucket-hat.webp",
+        description: "Colorful rainbow bucket hat. Fun accessory that adds personality to any outfit."
+    },
+    {
+        id: 92,
+        name: "Cap Season 6",
+        category: "accessories",
+        price: 200,
+        image: "assets/images/products/cap-season6.webp",
+        description: "Classic cap from Season 6 collection. Essential headwear with clean CRBFTN branding."
     }
 ];
 
@@ -679,11 +958,15 @@ function renderCategorySections() {
     const container = document.getElementById('category-sections');
     if (!container) return;
     
-    const categories = ['hoodies', 'pants', 'shoes', 'hats'];
+    const categories = ['hoodies', 'tshirts', 'pants', 'womens', 'bottoms', 'shoes', 'accessories', 'hats'];
     const categoryNames = {
         'hoodies': 'Hoodies & Sweatshirts',
+        'tshirts': 'T-Shirts & Long Sleeves',
         'pants': 'Pants & Jeans',
+        'womens': 'Women\'s Collection',
+        'bottoms': 'Jeans & Shorts',
         'shoes': 'Shoes & Sneakers',
+        'accessories': 'Accessories & Belts',
         'hats': 'Hats & Caps'
     };
     
