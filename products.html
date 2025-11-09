@@ -111,47 +111,27 @@
                 <button onclick="filterProducts('hoodies')" class="filter-btn btn-secondary">
                     Premium Hoodies
                 </button>
-                <button onclick="filterProducts('jackets')" class="filter-btn btn-secondary">
-                    Jackets
-                </button>
                 <button onclick="filterProducts('tshirts')" class="filter-btn btn-secondary">
                     Classic Tees
+                </button>
+                <button onclick="filterProducts('jackets')" class="filter-btn btn-secondary">
+                    Jackets
                 </button>
                 <button onclick="filterProducts('pants')" class="filter-btn btn-secondary">
                     Pants & Jeans
                 </button>
-                <button onclick="filterProducts('shoes')" class="filter-btn btn-secondary">
-                    Footwear
+                <button onclick="filterProducts('womens')" class="filter-btn btn-secondary">
+                    Women's Collection
+                </button>
+                <button onclick="filterProducts('bottoms')" class="filter-btn btn-secondary">
+                    Jeans & Shorts
                 </button>
                 <button onclick="filterProducts('accessories')" class="filter-btn btn-outline-red">
                     Accessories
                 </button>
-            </div>
-            
-            <!-- Sort and View Options -->
-            <div class="flex flex-col sm:flex-row justify-between items-center mb-8" data-aos="fade-up" data-aos-delay="400">
-                <div class="flex items-center space-x-4 mb-4 sm:mb-0">
-                    <span class="text-gray-600">Sort by:</span>
-                    <select class="form-input bg-white text-gray-900 border-gray-300">
-                        <option>Featured</option>
-                        <option>Price: Low to High</option>
-                        <option>Price: High to Low</option>
-                        <option>Newest First</option>
-                        <option>Best Selling</option>
-                    </select>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <button class="p-2 border rounded hover:bg-gray-50">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
-                        </svg>
-                    </button>
-                    <button class="p-2 border rounded hover:bg-gray-50">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
+                <button onclick="filterProducts('hats')" class="filter-btn btn-secondary">
+                    Hats & Caps
+                </button>
             </div>
         </div>
     </section>
@@ -237,14 +217,6 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Load More Button -->
-            <div class="text-center mt-16" data-aos="fade-up">
-                <button class="btn-primary text-lg px-12 py-4">
-                    Load More Clothing
-                </button>
-                <p class="text-gray-600 mt-4">Showing 12 of 48 items</p>
-            </div>
         </div>
     </section>
 
@@ -311,6 +283,8 @@
                 // Fallback for local file testing - load inline navigation
                 if (location.protocol === 'file:' && elementId === 'navigation-container') {
                     loadInlineNavigation();
+                } else if (location.protocol === 'file:' && elementId === 'footer-container') {
+                    loadInlineFooter();
                 }
             }
         }
@@ -374,6 +348,94 @@
             const menu = document.getElementById('mobile-menu');
             if (menu) {
                 menu.classList.toggle('hidden');
+            }
+        }
+
+        // Fallback inline footer for local testing
+        function loadInlineFooter() {
+            const footerContainer = document.getElementById('footer-container');
+            if (footerContainer) {
+                footerContainer.innerHTML = `
+                    <footer class="bg-gray-900 text-white">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                                <!-- Brand Section -->
+                                <div class="lg:col-span-1">
+                                    <img src="assets/images/logo.png" alt="CRBFTN Logo" class="h-12 w-55 mb-4">
+                                    <p class="text-gray-400 mb-6 leading-relaxed">
+                                        Premium streetwear and lifestyle brand born in Makhado, Limpopo. 
+                                        Where South African heritage meets contemporary fashion.
+                                    </p>
+                                </div>
+
+                                <!-- Quick Links -->
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                                        <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+                                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
+                                        <li><a href="reviews.html" class="text-gray-400 hover:text-white transition-colors">Reviews</a></li>
+                                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Categories -->
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-4">Shop</h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="products.html?category=hoodies" class="text-gray-400 hover:text-white transition-colors">Hoodies</a></li>
+                                        <li><a href="products.html?category=tshirts" class="text-gray-400 hover:text-white transition-colors">T-Shirts</a></li>
+                                        <li><a href="products.html?category=accessories" class="text-gray-400 hover:text-white transition-colors">Accessories</a></li>
+                                        <li><a href="products.html?category=featured" class="text-gray-400 hover:text-white transition-colors">New Arrivals</a></li>
+                                        <li><a href="products.html?category=sale" class="text-gray-400 hover:text-white transition-colors">Sale Items</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Contact Info -->
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-4">Get In Touch</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-start space-x-3">
+                                            <div>
+                                                <p class="text-gray-400">📍 Makhado, Limpopo</p>
+                                                <p class="text-gray-400">South Africa, 0920</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex items-center space-x-3">
+                                            <a href="mailto:crabfontain@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                                                📧 crabfontain@gmail.com
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="flex items-center space-x-3">
+                                            <a href="tel:+27680003578" class="text-gray-400 hover:text-white transition-colors">
+                                                📱 +27 68 000 3578
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bottom Section -->
+                            <div class="border-t border-gray-800 mt-12 pt-8">
+                                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                                    <div class="text-gray-400 text-sm">
+                                        <p>&copy; 2025 CRBFTN. All rights reserved. Crafted with ❤️ in Makhado, Limpopo.</p>
+                                    </div>
+                                    <div class="flex space-x-6 text-sm">
+                                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Shipping Info</a>
+                                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Returns</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                `;
             }
         }
 

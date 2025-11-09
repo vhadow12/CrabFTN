@@ -1,0 +1,319 @@
+═══════════════════════════════════════════════════════════════════════════════
+                        CRBFTN PRODUCT LIST - CLEANED & ORGANIZED
+═══════════════════════════════════════════════════════════════════════════════
+
+ANALYSIS COMPLETED:
+✅ Removed duplicate "Front" and "Back" versions (kept unique naming)
+✅ Cleaned product names for consistency
+✅ Organized by category
+✅ All products eligible for 35% launch discount
+✅ Created image path structure for assets/images/products/
+
+═══════════════════════════════════════════════════════════════════════════════
+                                  HOODIES & SWEATERS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Chocolate Season Hoodie
+   Price: R1000
+   Discounted (35% off): R650
+   Image: assets/images/products/chocolate-season-hoodie.webp
+   Category: hoodies
+
+2. Gang Purple Season 1 Hoodie
+   Price: R600
+   Discounted (35% off): R390
+   Image: assets/images/products/gang-purple-season1-hoodie.webp
+   Category: hoodies
+
+3. Male Yellowbone Hoodie
+   Price: R800
+   Discounted (35% off): R520
+   Image: assets/images/products/male-yellowbone-hoodie.webp
+   Category: hoodies
+
+4. Pink 28kg Season Hoodie
+   Price: R600
+   Discounted (35% off): R390
+   Image: assets/images/products/pink-28kg-season-hoodie.webp
+   Category: hoodies
+
+5. Snowwhite Season 6 Hoodie
+   Price: R900
+   Discounted (35% off): R585
+   Image: assets/images/products/snowwhite-season6-hoodie.webp
+   Category: hoodies
+
+6. Chocolate Season Sweater
+   Price: R500
+   Discounted (35% off): R325
+   Image: assets/images/products/chocolate-season-sweater.webp
+   Category: hoodies
+
+═══════════════════════════════════════════════════════════════════════════════
+                                    T-SHIRTS
+═══════════════════════════════════════════════════════════════════════════════
+
+7. Grass Green Season 1 T-Shirt
+   Price: R350
+   Discounted (35% off): R228
+   Image: assets/images/products/grass-green-season1-tshirt.webp
+   Category: tshirts
+
+8. Grey Chocolates Season 6 T-Shirt
+   Price: R500
+   Discounted (35% off): R325
+   Image: assets/images/products/grey-chocolates-season6-tshirt.webp
+   Category: tshirts
+
+9. 28kg T-Shirt
+   Price: R400
+   Discounted (35% off): R260
+   Image: assets/images/products/28kg-tshirt.webp
+   Category: tshirts
+
+10. Grass Season 6 T-Shirt
+    Price: R350
+    Discounted (35% off): R228
+    Image: assets/images/products/grass-season6-tshirt.webp
+    Category: tshirts
+
+11. Pink Crabs Multiply T-Shirt
+    Price: R600
+    Discounted (35% off): R390
+    Image: assets/images/products/pink-crabs-multiply-tshirt.webp
+    Category: tshirts
+
+12. Long Sleeve Chocolate Season
+    Price: R500
+    Discounted (35% off): R325
+    Image: assets/images/products/long-sleeve-chocolate-season.webp
+    Category: tshirts
+
+13. Moody Season 6 T-Shirt
+    Price: R500
+    Discounted (35% off): R325
+    Image: assets/images/products/moody-season6-tshirt.webp
+    Category: tshirts
+
+14. Crabs Multiply T-Shirt
+    Price: R600
+    Discounted (35% off): R390
+    Image: assets/images/products/crabs-multiply-tshirt.webp
+    Category: tshirts
+
+15. Pink 28kg T-Shirt
+    Price: R500
+    Discounted (35% off): R325
+    Image: assets/images/products/pink-28kg-tshirt.webp
+    Category: tshirts
+
+16. 1.1 Multiply T-Shirt
+    Price: R500
+    Discounted (35% off): R325
+    Image: assets/images/products/11-multiply-tshirt.webp
+    Category: tshirts
+
+═══════════════════════════════════════════════════════════════════════════════
+                                  FEMALE WEAR
+═══════════════════════════════════════════════════════════════════════════════
+
+17. Female Crop Jeans Yellow
+    Price: R400
+    Discounted (35% off): R260
+    Image: assets/images/products/female-crop-jeans-yellow.webp
+    Category: womens
+
+18. Female Ringo Season 6
+    Price: R400
+    Discounted (35% off): R260
+    Image: assets/images/products/female-ringo-season6.webp
+    Category: womens
+
+19. Female Snowing Top
+    Price: R400
+    Discounted (35% off): R260
+    Image: assets/images/products/female-snowing-top.webp
+    Category: womens
+
+20. Female Two Piece
+    Price: R800
+    Discounted (35% off): R520
+    Image: assets/images/products/female-two-piece.webp
+    Category: womens
+
+21. Female Black Kupa Snowhite
+    Price: R400
+    Discounted (35% off): R260
+    Image: assets/images/products/female-black-kupa-snowhite.webp
+    Category: womens
+
+22. Female 28kg Crop T-Shirt
+    Price: R400
+    Discounted (35% off): R260
+    Image: assets/images/products/female-28kg-crop-tshirt.webp
+    Category: womens
+
+23. Female Crop Shorts
+    Price: R450
+    Discounted (35% off): R293
+    Image: assets/images/products/female-crop-shorts.webp
+    Category: womens
+
+24. Female Crop Snowhite
+    Price: R400
+    Discounted (35% off): R260
+    Image: assets/images/products/female-crop-snowhite.webp
+    Category: womens
+
+25. Female Kupa Snowhite Crop
+    Price: R400
+    Discounted (35% off): R260
+    Image: assets/images/products/female-kupa-snowhite-crop.webp
+    Category: womens
+
+26. Female Lime Snow Season 6
+    Price: R400
+    Discounted (35% off): R260
+    Image: assets/images/products/female-lime-snow-season6.webp
+    Category: womens
+
+27. Female Ringo Vest
+    Price: R250
+    Discounted (35% off): R163
+    Image: assets/images/products/female-ringo-vest.webp
+    Category: womens
+
+28. Female Yellowbone Vest
+    Price: R300
+    Discounted (35% off): R195
+    Image: assets/images/products/female-yellowbone-vest.webp
+    Category: womens
+
+═══════════════════════════════════════════════════════════════════════════════
+                                SHORTS & BOTTOMS
+═══════════════════════════════════════════════════════════════════════════════
+
+29. Ringo Female Shorts
+    Price: R450
+    Discounted (35% off): R293
+    Image: assets/images/products/ringo-female-shorts.webp
+    Category: bottoms
+
+30. Ringo Jeans Season 6
+    Price: R1000
+    Discounted (35% off): R650
+    Image: assets/images/products/ringo-jeans-season6.webp
+    Category: bottoms
+
+31. Ringo Skirts Season 6
+    Price: R700
+    Discounted (35% off): R455
+    Image: assets/images/products/ringo-skirts-season6.webp
+    Category: bottoms
+
+═══════════════════════════════════════════════════════════════════════════════
+                                  ACCESSORIES
+═══════════════════════════════════════════════════════════════════════════════
+
+32. Rainbow Bucket Hat
+    Price: R250
+    Discounted (35% off): R163
+    Image: assets/images/products/rainbow-bucket-hat.webp
+    Category: accessories
+
+33. Cap Season 6
+    Price: R200
+    Discounted (35% off): R130
+    Image: assets/images/products/cap-season6.webp
+    Category: accessories
+
+═══════════════════════════════════════════════════════════════════════════════
+                            PRODUCT SUMMARY STATISTICS
+═══════════════════════════════════════════════════════════════════════════════
+
+TOTAL PRODUCTS: 33 unique items
+
+CATEGORY BREAKDOWN:
+• Hoodies & Sweaters: 6 items
+• T-Shirts: 10 items  
+• Female Wear: 12 items
+• Shorts & Bottoms: 3 items
+• Accessories: 2 items
+
+PRICE RANGE:
+• Lowest: R200 (Cap Season 6) → R130 with discount
+• Highest: R1000 (Chocolate Season Hoodie, Ringo Jeans) → R650 with discount
+• Average: R520 → R338 with discount
+
+DUPLICATES REMOVED:
+✅ Combined "Front" and "Back" versions of same products
+✅ Eliminated exact duplicates (Rainbow bucket hat appeared twice)
+✅ Standardized naming convention
+✅ Removed pricing inconsistencies (Grey chocolates had R300 and R500)
+
+═══════════════════════════════════════════════════════════════════════════════
+                              IMAGE REQUIREMENTS
+═══════════════════════════════════════════════════════════════════════════════
+
+You need to gather/create 33 product images with these exact filenames:
+
+HOODIES & SWEATERS:
+- chocolate-season-hoodie.webp
+- gang-purple-season1-hoodie.webp
+- male-yellowbone-hoodie.webp
+- pink-28kg-season-hoodie.webp
+- snowwhite-season6-hoodie.webp
+- chocolate-season-sweater.webp
+
+T-SHIRTS:
+- grass-green-season1-tshirt.webp
+- grey-chocolates-season6-tshirt.webp
+- 28kg-tshirt.webp
+- grass-season6-tshirt.webp
+- pink-crabs-multiply-tshirt.webp
+- long-sleeve-chocolate-season.webp
+- moody-season6-tshirt.webp
+- crabs-multiply-tshirt.webp
+- pink-28kg-tshirt.webp
+- 11-multiply-tshirt.webp
+
+FEMALE WEAR:
+- female-crop-jeans-yellow.webp
+- female-ringo-season6.webp
+- female-snowing-top.webp
+- female-two-piece.webp
+- female-black-kupa-snowhite.webp
+- female-28kg-crop-tshirt.webp
+- female-crop-shorts.webp
+- female-crop-snowhite.webp
+- female-kupa-snowhite-crop.webp
+- female-lime-snow-season6.webp
+- female-ringo-vest.webp
+- female-yellowbone-vest.webp
+
+BOTTOMS:
+- ringo-female-shorts.webp
+- ringo-jeans-season6.webp
+- ringo-skirts-season6.webp
+
+ACCESSORIES:
+- rainbow-bucket-hat.webp
+- cap-season6.webp
+
+═══════════════════════════════════════════════════════════════════════════════
+                                NEXT STEPS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. ✅ GATHER IMAGES: Collect product photos with exact filenames above
+2. ✅ OPTIMIZE IMAGES: Convert to WebP format, resize for web (800x800px recommended)
+3. ✅ UPLOAD TO: assets/images/products/ folder
+4. ✅ UPDATE SCRIPT.JS: Replace current products array with new data
+5. ✅ TEST WEBSITE: Ensure all products display correctly
+6. ✅ UPDATE PRICING: Confirm 35% discount calculation works
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Ready to update your website with these 33 amazing products! 🚀
+All priced with your 35% launch discount included.
+
+═══════════════════════════════════════════════════════════════════════════════

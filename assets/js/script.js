@@ -29,6 +29,8 @@ let selectedRating = 0;
 let currentProduct = null;
 let allProducts = [];
 let currentFilter = 'all';
+let currentSort = 'featured';
+let currentView = 'tile';
 
 // Sample products data
 const products = [
@@ -257,14 +259,6 @@ const products = [
         description: "Athletic track jacket with racing stripes and moisture-wicking technology."
     },
     {
-        id: 60,
-        name: "Street King Leather Jacket",
-        category: "jackets",
-        price: 2299,
-        image: "assets/images/products/leather-jacket.webp",
-        description: "Premium leather jacket with CRBFTN hardware and urban street styling."
-    },
-    {
         id: 61,
         name: "CRBFTN Varsity Jacket",
         category: "jackets",
@@ -342,32 +336,6 @@ const products = [
         description: "Thought-provoking graphic tee with inspirational quotes and CRBFTN street wisdom."
     },
     
-    // Creative Shoes
-    {
-        id: 48,
-        name: "CRBFTN Air Classics",
-        category: "shoes",
-        price: 1999,
-        image: "assets/images/products/crbftn-air-classics.webp",
-        description: "Premium sneakers with CRBFTN colorway and signature comfort technology.",
-        featured: true
-    },
-    {
-        id: 49,
-        name: "Street Walker CRBFTN",
-        category: "shoes",
-        price: 1799,
-        image: "assets/images/products/urban-sneakers.webp",
-        description: "Durable street shoes built for urban adventures with CRBFTN sole design."
-    },
-    {
-        id: 50,
-        name: "CRBFTN High Tops",
-        category: "shoes",
-        price: 1899,
-        image: "assets/images/products/crbftn-high-tops.webp",
-        description: "Classic high-top silhouette with CRBFTN ankle patches and premium materials."
-    },
     
     // Creative Accessories
     {
@@ -393,22 +361,6 @@ const products = [
         price: 299,
         image: "assets/images/products/crew-socks.webp",
         description: "Premium crew socks with CRBFTN logo pattern and superior comfort."
-    },
-    {
-        id: 54,
-        name: "CRBFTN Explorer Backpack",
-        category: "accessories",
-        price: 899,
-        image: "assets/images/products/crbftn-explorer-backpack.webp",
-        description: "Urban exploration backpack with CRBFTN branding and multiple compartments."
-    },
-    {
-        id: 55,
-        name: "CRBFTN Street Belt",
-        category: "accessories",
-        price: 399,
-        image: "assets/images/products/crbftn-street-belt.webp",
-        description: "Adjustable street belt with custom CRBFTN buckle and durable construction."
     },
 
     // NEW CRBFTN PRODUCTS - 33 Items Added
@@ -958,14 +910,14 @@ function renderCategorySections() {
     const container = document.getElementById('category-sections');
     if (!container) return;
     
-    const categories = ['hoodies', 'tshirts', 'pants', 'womens', 'bottoms', 'shoes', 'accessories', 'hats'];
+    const categories = ['hoodies', 'tshirts', 'jackets', 'pants', 'womens', 'bottoms', 'accessories', 'hats'];
     const categoryNames = {
         'hoodies': 'Hoodies & Sweatshirts',
         'tshirts': 'T-Shirts & Long Sleeves',
+        'jackets': 'Jackets & Outerwear',
         'pants': 'Pants & Jeans',
         'womens': 'Women\'s Collection',
         'bottoms': 'Jeans & Shorts',
-        'shoes': 'Shoes & Sneakers',
         'accessories': 'Accessories & Belts',
         'hats': 'Hats & Caps'
     };
